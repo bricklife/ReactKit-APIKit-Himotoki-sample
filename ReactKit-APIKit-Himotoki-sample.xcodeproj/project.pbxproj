@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBB232FF1BC3B9560079375D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB232FE1BC3B9560079375D /* AppDelegate.swift */; };
+		CBB233041BC3B9560079375D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB233021BC3B9560079375D /* Main.storyboard */; };
+		CBB233061BC3B9560079375D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB233051BC3B9560079375D /* Assets.xcassets */; };
+		CBB233091BC3B9560079375D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB233071BC3B9560079375D /* LaunchScreen.storyboard */; };
+		CBB233111BC3C09E0079375D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = CBB233101BC3C09E0079375D /* Cartfile */; settings = {ASSET_TAGS = (); }; };
+		CBB233141BC3C0F80079375D /* IncrementalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB2331A1BC3C1B70079375D /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233151BC3C1B70079375D /* APIKit.framework */; };
+		CBB2331B1BC3C1B70079375D /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233151BC3C1B70079375D /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB2331C1BC3C1B70079375D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233161BC3C1B70079375D /* Himotoki.framework */; };
+		CBB2331D1BC3C1B70079375D /* Himotoki.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233161BC3C1B70079375D /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB2331E1BC3C1B70079375D /* ReactKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233171BC3C1B70079375D /* ReactKit.framework */; };
+		CBB2331F1BC3C1B70079375D /* ReactKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233171BC3C1B70079375D /* ReactKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB233201BC3C1B70079375D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233181BC3C1B70079375D /* Result.framework */; };
+		CBB233211BC3C1B70079375D /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233181BC3C1B70079375D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB233221BC3C1B70079375D /* SwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233191BC3C1B70079375D /* SwiftTask.framework */; };
+		CBB233231BC3C1B70079375D /* SwiftTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233191BC3C1B70079375D /* SwiftTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB233261BC3C1E20079375D /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233251BC3C1E20079375D /* QiitaAPI.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB233281BC3C1FE0079375D /* API+SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBB233241BC3C1B80079375D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CBB2331D1BC3C1B70079375D /* Himotoki.framework in Embed Frameworks */,
+				CBB2331F1BC3C1B70079375D /* ReactKit.framework in Embed Frameworks */,
+				CBB2331B1BC3C1B70079375D /* APIKit.framework in Embed Frameworks */,
+				CBB233231BC3C1B70079375D /* SwiftTask.framework in Embed Frameworks */,
+				CBB233211BC3C1B70079375D /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CBB232FB1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactKit-APIKit-Himotoki-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB232FE1BC3B9560079375D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBB233031BC3B9560079375D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBB233051BC3B9560079375D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBB233081BC3B9560079375D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBB2330A1BC3B9560079375D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB233101BC3C09E0079375D /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalSearchViewController.swift; sourceTree = "<group>"; };
+		CBB233151BC3C1B70079375D /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		CBB233161BC3C1B70079375D /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		CBB233171BC3C1B70079375D /* ReactKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactKit.framework; path = Carthage/Build/iOS/ReactKit.framework; sourceTree = "<group>"; };
+		CBB233181BC3C1B70079375D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		CBB233191BC3C1B70079375D /* SwiftTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTask.framework; path = Carthage/Build/iOS/SwiftTask.framework; sourceTree = "<group>"; };
+		CBB233251BC3C1E20079375D /* QiitaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API+SwiftTask.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB232F81BC3B9560079375D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB2331C1BC3C1B70079375D /* Himotoki.framework in Frameworks */,
+				CBB2331E1BC3C1B70079375D /* ReactKit.framework in Frameworks */,
+				CBB2331A1BC3C1B70079375D /* APIKit.framework in Frameworks */,
+				CBB233221BC3C1B70079375D /* SwiftTask.framework in Frameworks */,
+				CBB233201BC3C1B70079375D /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBB232F21BC3B9560079375D = {
+			isa = PBXGroup;
+			children = (
+				CBB233121BC3C0AA0079375D /* Carthage */,
+				CBB232FD1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample */,
+				CBB232FC1BC3B9560079375D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB232FC1BC3B9560079375D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB232FB1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB232FD1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample */ = {
+			isa = PBXGroup;
+			children = (
+				CBB232FE1BC3B9560079375D /* AppDelegate.swift */,
+				CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */,
+				CBB233251BC3C1E20079375D /* QiitaAPI.swift */,
+				CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */,
+				CBB233021BC3B9560079375D /* Main.storyboard */,
+				CBB233051BC3B9560079375D /* Assets.xcassets */,
+				CBB233071BC3B9560079375D /* LaunchScreen.storyboard */,
+				CBB2330A1BC3B9560079375D /* Info.plist */,
+			);
+			path = "ReactKit-APIKit-Himotoki-sample";
+			sourceTree = "<group>";
+		};
+		CBB233121BC3C0AA0079375D /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				CBB233101BC3C09E0079375D /* Cartfile */,
+				CBB233151BC3C1B70079375D /* APIKit.framework */,
+				CBB233161BC3C1B70079375D /* Himotoki.framework */,
+				CBB233171BC3C1B70079375D /* ReactKit.framework */,
+				CBB233181BC3C1B70079375D /* Result.framework */,
+				CBB233191BC3C1B70079375D /* SwiftTask.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBB232FA1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB2330D1BC3B9560079375D /* Build configuration list for PBXNativeTarget "ReactKit-APIKit-Himotoki-sample" */;
+			buildPhases = (
+				CBB232F71BC3B9560079375D /* Sources */,
+				CBB232F81BC3B9560079375D /* Frameworks */,
+				CBB232F91BC3B9560079375D /* Resources */,
+				CBB233241BC3C1B80079375D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactKit-APIKit-Himotoki-sample";
+			productName = "ReactKit-APIKit-Himotoki-sample";
+			productReference = CBB232FB1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB232F31BC3B9560079375D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Shinichiro Oba";
+				TargetAttributes = {
+					CBB232FA1BC3B9560079375D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CBB232F61BC3B9560079375D /* Build configuration list for PBXProject "ReactKit-APIKit-Himotoki-sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBB232F21BC3B9560079375D;
+			productRefGroup = CBB232FC1BC3B9560079375D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB232FA1BC3B9560079375D /* ReactKit-APIKit-Himotoki-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB232F91BC3B9560079375D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB233091BC3B9560079375D /* LaunchScreen.storyboard in Resources */,
+				CBB233061BC3B9560079375D /* Assets.xcassets in Resources */,
+				CBB233111BC3C09E0079375D /* Cartfile in Resources */,
+				CBB233041BC3B9560079375D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB232F71BC3B9560079375D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB233261BC3C1E20079375D /* QiitaAPI.swift in Sources */,
+				CBB232FF1BC3B9560079375D /* AppDelegate.swift in Sources */,
+				CBB233141BC3C0F80079375D /* IncrementalSearchViewController.swift in Sources */,
+				CBB233281BC3C1FE0079375D /* API+SwiftTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBB233021BC3B9560079375D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB233031BC3B9560079375D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBB233071BC3B9560079375D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB233081BC3B9560079375D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBB2330B1BC3B9560079375D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB2330C1BC3B9560079375D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB2330E1BC3B9560079375D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ReactKit-APIKit-Himotoki-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bricklife.ios.ReactKit-APIKit-Himotoki-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBB2330F1BC3B9560079375D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "ReactKit-APIKit-Himotoki-sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bricklife.ios.ReactKit-APIKit-Himotoki-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBB232F61BC3B9560079375D /* Build configuration list for PBXProject "ReactKit-APIKit-Himotoki-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB2330B1BC3B9560079375D /* Debug */,
+				CBB2330C1BC3B9560079375D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB2330D1BC3B9560079375D /* Build configuration list for PBXNativeTarget "ReactKit-APIKit-Himotoki-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB2330E1BC3B9560079375D /* Debug */,
+				CBB2330F1BC3B9560079375D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBB232F31BC3B9560079375D /* Project object */;
+}

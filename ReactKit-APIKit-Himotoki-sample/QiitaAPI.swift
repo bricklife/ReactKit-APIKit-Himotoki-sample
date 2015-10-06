@@ -45,11 +45,7 @@ struct GetItemsRequest: QiitaRequest {
     }
     
     func responseFromObject(object: AnyObject, URLResponse: NSHTTPURLResponse) -> Response? {
-        guard let array = object as? [AnyObject] else {
-            return nil
-        }
-        
-        return array.map { try! decode($0) }
+        return try? decodeArray(object)
     }
 }
 

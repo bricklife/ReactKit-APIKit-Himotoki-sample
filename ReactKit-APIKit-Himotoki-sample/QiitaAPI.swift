@@ -62,27 +62,19 @@ struct Item: Decodable {
     static func decode(e: Extractor) throws -> Item {
         return try build(self.init)(
             e <| "title",
-            e <| "created_at",
+            dateFromString(e <| "created_at"),
             e <| "url",
             e <| ["user", "id"]
         )
     }
-}
-
-public enum ConvertError: ErrorType {
-    case InvalidParameter(type: String, from: String)
-}
-
-extension NSDate: Decodable {
-    public static func decode(e: Extractor) throws -> NSDate {
-        let rawValue = try String.decode(e)
-        
+    
+    private static func dateFromString(string: String) throws -> NSDate {
         let dateFormatter = NSDateFormatter()
         dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         
-        guard let result = dateFormatter.dateFromString(rawValue) else {
-            throw ConvertError.InvalidParameter(type: "\(self)", from: rawValue)
+        guard let result = dateFormatter.dateFromString(string) else {
+            throw ConvertError.InvalidParameter(type: "\(self)", from: string)
         }
         
         return result
@@ -99,4 +91,8 @@ extension NSURL: Decodable {
         
         return result
     }
+}
+
+public enum ConvertError: ErrorType {
+    case InvalidParameter(type: String, from: String)
 }

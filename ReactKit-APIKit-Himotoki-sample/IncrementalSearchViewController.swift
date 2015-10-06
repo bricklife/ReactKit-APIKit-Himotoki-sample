@@ -9,6 +9,7 @@
 import UIKit
 import ReactKit
 import APIKit
+import SafariServices
 
 class IncrementalSearchViewController: UITableViewController {
     
@@ -73,6 +74,15 @@ class IncrementalSearchViewController: UITableViewController {
         cell.detailTextLabel?.text = self.dateFormatter.stringFromDate(item.createdAt)
         
         return cell
+    }
+    
+    // MARK: - UITableViewDataSource
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = self.items[indexPath.row]
+        let vc = SFSafariViewController(URL: item.url)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - UISearchBarDelegate

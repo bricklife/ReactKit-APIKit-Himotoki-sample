@@ -79,7 +79,7 @@ class IncrementalSearchViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - UITableViewDataSource
+    // MARK: - UITableViewDelegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let item = self.items[indexPath.row]

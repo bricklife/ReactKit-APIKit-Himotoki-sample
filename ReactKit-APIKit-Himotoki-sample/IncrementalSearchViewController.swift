@@ -25,6 +25,9 @@ class IncrementalSearchViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 44
+        
         self.dateFormatter.locale = NSLocale.currentLocale()
         self.dateFormatter.timeZone = NSTimeZone.localTimeZone()
         self.dateFormatter.dateStyle = .ShortStyle
@@ -71,7 +74,7 @@ class IncrementalSearchViewController: UITableViewController {
         
         let item = self.items[indexPath.row]
         cell.textLabel?.text = item.title
-        cell.detailTextLabel?.text = self.dateFormatter.stringFromDate(item.createdAt)
+        cell.detailTextLabel?.text = "\(self.dateFormatter.stringFromDate(item.createdAt)) に \(item.userId) が投稿"
         
         return cell
     }

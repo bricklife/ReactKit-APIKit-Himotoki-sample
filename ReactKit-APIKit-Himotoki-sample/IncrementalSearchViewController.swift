@@ -30,6 +30,8 @@ class IncrementalSearchViewController: UITableViewController {
         self.dateFormatter.timeStyle = .ShortStyle
         
         bind()
+        
+        self.searchBar.becomeFirstResponder()
     }
     
     func bind() {

@@ -40,6 +40,10 @@ class IncrementalSearchViewController: UITableViewController {
             |> map { ($0 as? String) ?? "" }
             |> distinctUntilChanged
             |> map { query -> Stream<[Item]> in
+                if query.characters.count == 0 {
+                    return Stream<[Item]>.just([])
+                }
+                
                 let request = GetItemsRequest(query: query)
                 return Stream<[Item]>.fromTask(API.taskFromRequest(request))
             }

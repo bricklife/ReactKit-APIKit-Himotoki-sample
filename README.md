@@ -1,5 +1,5 @@
 # ReactKit-APIKit-Himotoki-sample
-Incremental search sample created using ReactKit, APIKit and Himotoki
+Incremental search sample created using:
 
 - Swift 2.0
 - ReactKit 0.12.0

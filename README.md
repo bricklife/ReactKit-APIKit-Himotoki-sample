@@ -10,4 +10,4 @@ Incremental search sample created using:
   - https://github.com/ikesyo/Himotoki/releases/tag/1.0.0
 - Qiita API v2
   - https://qiita.com/api/v2/docs
-  - IMPORTANT: For unauthenticated requests, you can make up to 60 requests per hour
+  - **IMPORTANT:** For unauthenticated requests, you can make up to 60 requests per hour

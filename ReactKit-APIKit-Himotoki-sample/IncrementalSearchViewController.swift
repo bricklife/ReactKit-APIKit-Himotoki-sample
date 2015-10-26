@@ -44,7 +44,7 @@ class IncrementalSearchViewController: UITableViewController {
             |> map { ($0 as? String) ?? "" }
             |> distinctUntilChanged
             |> map { query -> Stream<[Item]> in
-                if query.characters.count == 0 {
+                if query.isEmpty {
                     return Stream<[Item]>.just([])
                 }
                 
@@ -54,6 +54,7 @@ class IncrementalSearchViewController: UITableViewController {
             |> switchLatestInner
         
         self.searchResultStream! ~> { [weak self] items in
+            print(items.count)
             self?.items = items
             self?.tableView.reloadData()
         }

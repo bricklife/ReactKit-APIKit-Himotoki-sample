@@ -10,7 +10,7 @@ import Foundation
 import APIKit
 import Himotoki
 
-protocol QiitaRequest: Request {
+protocol QiitaRequest: RequestType {
 }
 
 extension QiitaRequest {

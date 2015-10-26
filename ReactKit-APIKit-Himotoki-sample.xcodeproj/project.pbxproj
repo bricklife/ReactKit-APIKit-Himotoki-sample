@@ -11,8 +11,8 @@
 		CBB233041BC3B9560079375D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB233021BC3B9560079375D /* Main.storyboard */; };
 		CBB233061BC3B9560079375D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB233051BC3B9560079375D /* Assets.xcassets */; };
 		CBB233091BC3B9560079375D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB233071BC3B9560079375D /* LaunchScreen.storyboard */; };
-		CBB233111BC3C09E0079375D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = CBB233101BC3C09E0079375D /* Cartfile */; settings = {ASSET_TAGS = (); }; };
-		CBB233141BC3C0F80079375D /* IncrementalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB233111BC3C09E0079375D /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = CBB233101BC3C09E0079375D /* Cartfile */; };
+		CBB233141BC3C0F80079375D /* IncrementalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */; };
 		CBB2331A1BC3C1B70079375D /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233151BC3C1B70079375D /* APIKit.framework */; };
 		CBB2331B1BC3C1B70079375D /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233151BC3C1B70079375D /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBB2331C1BC3C1B70079375D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233161BC3C1B70079375D /* Himotoki.framework */; };
@@ -23,8 +23,8 @@
 		CBB233211BC3C1B70079375D /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233181BC3C1B70079375D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CBB233221BC3C1B70079375D /* SwiftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233191BC3C1B70079375D /* SwiftTask.framework */; };
 		CBB233231BC3C1B70079375D /* SwiftTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBB233191BC3C1B70079375D /* SwiftTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CBB233261BC3C1E20079375D /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233251BC3C1E20079375D /* QiitaAPI.swift */; settings = {ASSET_TAGS = (); }; };
-		CBB233281BC3C1FE0079375D /* API+SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */; settings = {ASSET_TAGS = (); }; };
+		CBB233261BC3C1E20079375D /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233251BC3C1E20079375D /* QiitaAPI.swift */; };
+		CBB233281BC3C1FE0079375D /* Session+SwiftTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB233271BC3C1FE0079375D /* Session+SwiftTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +60,7 @@
 		CBB233181BC3C1B70079375D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		CBB233191BC3C1B70079375D /* SwiftTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTask.framework; path = Carthage/Build/iOS/SwiftTask.framework; sourceTree = "<group>"; };
 		CBB233251BC3C1E20079375D /* QiitaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
-		CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "API+SwiftTask.swift"; sourceTree = "<group>"; };
+		CBB233271BC3C1FE0079375D /* Session+SwiftTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Session+SwiftTask.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				CBB232FE1BC3B9560079375D /* AppDelegate.swift */,
 				CBB233131BC3C0F80079375D /* IncrementalSearchViewController.swift */,
 				CBB233251BC3C1E20079375D /* QiitaAPI.swift */,
-				CBB233271BC3C1FE0079375D /* API+SwiftTask.swift */,
+				CBB233271BC3C1FE0079375D /* Session+SwiftTask.swift */,
 				CBB233021BC3B9560079375D /* Main.storyboard */,
 				CBB233051BC3B9560079375D /* Assets.xcassets */,
 				CBB233071BC3B9560079375D /* LaunchScreen.storyboard */,
@@ -199,7 +199,7 @@
 				CBB233261BC3C1E20079375D /* QiitaAPI.swift in Sources */,
 				CBB232FF1BC3B9560079375D /* AppDelegate.swift in Sources */,
 				CBB233141BC3C0F80079375D /* IncrementalSearchViewController.swift in Sources */,
-				CBB233281BC3C1FE0079375D /* API+SwiftTask.swift in Sources */,
+				CBB233281BC3C1FE0079375D /* Session+SwiftTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -327,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

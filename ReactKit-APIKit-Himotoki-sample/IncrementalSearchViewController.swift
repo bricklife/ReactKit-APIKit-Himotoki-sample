@@ -49,7 +49,7 @@ class IncrementalSearchViewController: UITableViewController {
                 }
                 
                 let request = GetItemsRequest(query: query)
-                return Stream<[Item]>.fromTask(API.taskFromRequest(request))
+                return Stream<[Item]>.fromTask(Session.taskFromRequest(request))
             }
             |> switchLatestInner
         

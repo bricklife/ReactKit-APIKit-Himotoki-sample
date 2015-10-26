@@ -1,5 +1,5 @@
 //
-//  API+SwiftTask.swift
+//  Session+SwiftTask.swift
 //  ReactKit-APIKit-Himotoki-sample
 //
 //  Created by Shinichiro Oba on 2015/10/06.
@@ -10,8 +10,8 @@ import Foundation
 import APIKit
 import SwiftTask
 
-extension API {
-    static func taskFromRequest<T: Request>(request: T) -> Task<Void, T.Response, ErrorType> {
+extension Session {
+    static func taskFromRequest<T: RequestType>(request: T) -> Task<Void, T.Response, ErrorType> {
         return Task { fulfill, reject in
             self.sendRequest(request) { result in
                 switch result {
